@@ -1,49 +1,110 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
-.contenedor{
-    max-width: 1200px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
+h1,
+h2,
+h3 {
+  font-family: "Playfair", serif;
+  margin: 0 0 5rem 0;
 }
 
-.nombre-sitio{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+h2,
+h3 {
+  font-size: 3rem;
 }
 
-.nombre-sitio span{
-   color : #037bc0;
+h1 {
+  font-size: 5rem;
 }
 
-.contenedor-navegacion{
-    border-color: #e1e1e1;
-    border-top-style: solid;
-    border-width: 1px;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-.nav-principal{
-    display: flex;
-    flex-direction: ;
-    padding:20px 0;
+.contenedor {
+  max-width: 120rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 
-.hero{
-    background-image: url(../Imagenes//principal.jpg);
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.nombre-sitio {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.nombre-sitio span {
+  color: #037bc0;
+}
+
+.contenedor-navegacion {
+  border-color: #e1e1e1;
+  border-top-style: solid;
+  border-width: 0.1rem;
+}
+
+.nav-principal {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.hero {
+  background-image: url(../Imagenes//principal.jpg);
+  height: 55rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.categorias {
+  margin-top: 5rem;
+}
+
+.categorias h2 {
+  text-align: center;
+}
+.categoria a {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  color: white;
+  border-bottom-right-radius: 1rem;
+}
+
+
+.sobre-nosotros{
+    background-image: linear-gradient(to right, black 50%, red 100%);
 }
